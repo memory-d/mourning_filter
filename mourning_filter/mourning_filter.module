@@ -1,0 +1,10 @@
+<?php
+function mourning_filter_preprocess_html(&$variables) {
+	if (user_is_anonymous()){
+		$options = array('weight' => 0);
+		drupal_add_css(drupal_get_path('module', 'mourning_filter') . '/css/filter.css', $options);
+	}
+}
+
+
+

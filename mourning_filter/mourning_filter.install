@@ -1,0 +1,4 @@
+<?php
+function mourning_filter_uninstall() {
+	variable_del('mourning_filter');
+}
